@@ -19,3 +19,12 @@ var newFeed = [
 
 var userName = prompt("What is your username?");
 var Password = prompt("What is your password?");
+
+function signIn(user, pass) {
+    if (user === database[0].username &&
+        pass === database[0].password) {
+        console.log(newFeed);
+        } else {
+            alert("Sorry, wrong username and password");
+        }
+}
